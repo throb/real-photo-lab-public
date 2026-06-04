@@ -204,6 +204,7 @@ em { color: var(--accent); font-style: italic; }
 
 .sect {
   padding: var(--y) var(--x);
+  scroll-margin-top: 74px;
   content-visibility: auto;
   contain-intrinsic-size: 900px;
 }
@@ -421,6 +422,7 @@ em { color: var(--accent); font-style: italic; }
 .feat-tile-title { min-height: 2.2em; font-size: clamp(22px,2vw,27px); }
 
 .pricing-grid { grid-template-columns: repeat(3,1fr); gap: 16px; }
+.pricing-grid-single { max-width: 560px; grid-template-columns: 1fr; }
 .tier {
   position: relative;
   display: flex;
