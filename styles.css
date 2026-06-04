@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   --bg: #15130f;
   --bg-2: #211d18;
   --cream: #f1eadf;
@@ -135,7 +135,7 @@ em { color: var(--accent); font-style: italic; }
   user-select: none;
   background: #111;
   border: 1px solid var(--line);
-  border-radius: 4px;
+  border-radius: 8px;
   touch-action: pan-y;
 }
 .ba-img {
@@ -225,7 +225,7 @@ em { color: var(--accent); font-style: italic; }
   aspect-ratio: 4/3;
   overflow: hidden;
   border: 1px solid transparent;
-  border-radius: 4px;
+  border-radius: 8px;
   background: transparent;
   cursor: pointer;
 }
@@ -259,7 +259,7 @@ em { color: var(--accent); font-style: italic; }
   aspect-ratio: 4/3;
   margin-bottom: 24px;
   background: var(--bg-2);
-  border-radius: 4px;
+  border-radius: 8px;
 }
 .step-thumb img, .feat-tile-img img, .feat-lead-img img, .proof-strip img { width: 100%; height: 100%; object-fit: cover; }
 .step-thumb-tag {
@@ -291,7 +291,7 @@ em { color: var(--accent); font-style: italic; }
   gap: clamp(36px,6vw,84px);
   align-items: center;
 }
-.feat-lead-img { aspect-ratio: 4/5; overflow: hidden; background: var(--bg-2); border-radius: 4px; }
+.feat-lead-img { aspect-ratio: 4/5; overflow: hidden; background: var(--bg-2); border-radius: 8px; }
 .feat-lead-title { font-size: clamp(34px,4vw,58px); }
 .feat-lead-copy {
   max-width: 48ch;
@@ -410,7 +410,7 @@ em { color: var(--accent); font-style: italic; }
   grid-template-columns: repeat(5,1fr);
   gap: 8px;
 }
-.proof-strip img { aspect-ratio: 4/3; border: 1px solid var(--line); border-radius: 4px; }
+.proof-strip img { aspect-ratio: 4/3; border: 1px solid var(--line); border-radius: 8px; }
 
 .foot {
   display: flex;
