@@ -7,7 +7,7 @@
 <meta name="description" content="REAL PHOTO LAB is a fast real estate photo editor with magic-filter speed, layer-based control, color correction, masking, and object removal.">
 <meta name="rpl-version" content="marketing-v1-launch-pricing">
 <link rel="icon" type="image/webp" href="assets/brand/rpl-webicon.webp">
-<link rel="preload" as="image" href="assets/photos/exterior-front-after.webp" fetchpriority="high">
+<link rel="preload" as="image" href="assets/photos/exterior-front-after.webp" imagesrcset="assets/photos/exterior-front-after-900.webp 900w, assets/photos/exterior-front-after.webp 1800w" imagesizes="(max-width: 760px) calc(100vw - 40px), min(1280px, 90vw)" fetchpriority="high">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Geist:wght@400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
@@ -35,8 +35,8 @@
       <div class="hero-slider-frame">
         <div class="ba-wrap ba-hero">
           <div class="ba-frame" data-before="assets/photos/exterior-front-before.webp" data-after="assets/photos/exterior-front-after.webp">
-            <img class="ba-img ba-after" src="assets/photos/exterior-front-after.webp" alt="Edited exterior real estate photo" width="1800" height="1200" fetchpriority="high" decoding="async">
-            <div class="ba-clip" style="width:50%"><img class="ba-img ba-before" src="assets/photos/exterior-front-before.webp" alt="Original exterior real estate photo" width="1800" height="1200" fetchpriority="high" decoding="async"></div>
+            <img class="ba-img ba-after" src="assets/photos/exterior-front-after.webp" srcset="assets/photos/exterior-front-after-900.webp 900w, assets/photos/exterior-front-after.webp 1800w" sizes="(max-width: 760px) calc(100vw - 40px), min(1280px, 90vw)" alt="Edited exterior real estate photo" width="1800" height="1200" fetchpriority="high" decoding="async">
+            <div class="ba-clip" style="width:50%"><img class="ba-img ba-before" src="assets/photos/exterior-front-before.webp" srcset="assets/photos/exterior-front-before-900.webp 900w, assets/photos/exterior-front-before.webp 1800w" sizes="(max-width: 760px) calc(100vw - 40px), min(1280px, 90vw)" alt="Original exterior real estate photo" width="1800" height="1200" fetchpriority="high" decoding="async"></div>
             <span class="ba-tag ba-tag-l">Before</span>
             <span class="ba-tag ba-tag-r">After</span>
             <span class="ba-handle" style="left:50%" aria-hidden="true"><span class="ba-handle-line"></span><span class="ba-handle-knob">&lsaquo;&rsaquo;</span><span class="ba-handle-line"></span></span>
@@ -58,8 +58,8 @@
       <div class="gallery-feature">
         <div class="ba-wrap" id="gallery-ba">
           <div class="ba-frame">
-            <img class="ba-img ba-after" src="assets/photos/exterior-front-after.webp" alt="Edited sample" width="1800" height="1200" decoding="async">
-            <div class="ba-clip" style="width:50%"><img class="ba-img ba-before" src="assets/photos/exterior-front-before.webp" alt="Original sample" width="1800" height="1200" decoding="async"></div>
+            <img class="ba-img ba-after" src="assets/photos/exterior-front-after.webp" srcset="assets/photos/exterior-front-after-900.webp 900w, assets/photos/exterior-front-after.webp 1800w" sizes="(max-width: 760px) calc(100vw - 40px), min(1280px, 90vw)" alt="Edited sample" width="1800" height="1200" loading="lazy" decoding="async">
+            <div class="ba-clip" style="width:50%"><img class="ba-img ba-before" src="assets/photos/exterior-front-before.webp" srcset="assets/photos/exterior-front-before-900.webp 900w, assets/photos/exterior-front-before.webp 1800w" sizes="(max-width: 760px) calc(100vw - 40px), min(1280px, 90vw)" alt="Original sample" width="1800" height="1200" loading="lazy" decoding="async"></div>
             <span class="ba-tag ba-tag-l">Before</span>
             <span class="ba-tag ba-tag-r">After</span>
             <span class="ba-handle" style="left:50%" aria-hidden="true"><span class="ba-handle-line"></span><span class="ba-handle-knob">&lsaquo;&rsaquo;</span><span class="ba-handle-line"></span></span>
@@ -68,14 +68,14 @@
         </div>
       </div>
       <div class="gallery-thumbs" id="gallery-thumbs">
-        <button class="gthumb gthumb-active" data-label="Exterior curb appeal - Hernando, FL" data-style="Sky recovery" data-before="assets/photos/exterior-front-before.webp" data-after="assets/photos/exterior-front-after.webp"><img src="assets/photos/exterior-front-after.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">01</span><span class="gthumb-lbl">Sky recovery</span></span></button>
-        <button class="gthumb" data-label="Living room - Hernando, FL" data-style="Tone correction" data-before="assets/photos/living-room-before.webp" data-after="assets/photos/living-room-after.webp"><img src="assets/photos/living-room-after.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">02</span><span class="gthumb-lbl">Tone correction</span></span></button>
-        <button class="gthumb" data-label="Kitchen - Hernando, FL" data-style="Bright kitchen" data-before="assets/photos/bright-kitchen-before.webp" data-after="assets/photos/bright-kitchen-after.webp"><img src="assets/photos/bright-kitchen-after.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">03</span><span class="gthumb-lbl">Bright kitchen</span></span></button>
-        <button class="gthumb" data-label="Bathroom - Hernando, FL" data-style="Clean neutral" data-before="assets/photos/bathroom-suite-before.webp" data-after="assets/photos/bathroom-suite-after.webp"><img src="assets/photos/bathroom-suite-after.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">04</span><span class="gthumb-lbl">Clean neutral</span></span></button>
-        <button class="gthumb" data-label="Laundry room - Hernando, FL" data-style="Room cleanup" data-before="assets/photos/laundry-room-before.webp" data-after="assets/photos/laundry-room-after.webp"><img src="assets/photos/laundry-room-after.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">05</span><span class="gthumb-lbl">Room cleanup</span></span></button>
-        <button class="gthumb" data-label="Bedroom - Hernando, FL" data-style="Natural finish" data-before="assets/photos/bedroom-primary-before.webp" data-after="assets/photos/bedroom-primary-after.webp"><img src="assets/photos/bedroom-primary-after.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">06</span><span class="gthumb-lbl">Natural finish</span></span></button>
-        <button class="gthumb" data-label="Exterior - Hernando, FL" data-style="Curb appeal" data-before="assets/photos/exterior-drive-before.webp" data-after="assets/photos/exterior-drive-after.webp"><img src="assets/photos/exterior-drive-after.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">07</span><span class="gthumb-lbl">Curb appeal</span></span></button>
-        <button class="gthumb" data-label="Closet detail - Hernando, FL" data-style="Detail cleanup" data-before="assets/photos/closet-detail-before.webp" data-after="assets/photos/closet-detail-after.webp"><img src="assets/photos/closet-detail-after.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">08</span><span class="gthumb-lbl">Detail cleanup</span></span></button>
+        <button class="gthumb gthumb-active" data-label="Exterior curb appeal - Hernando, FL" data-style="Sky recovery" data-before="assets/photos/exterior-front-before.webp" data-after="assets/photos/exterior-front-after.webp"><img src="assets/photos/exterior-front-after-thumb.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">01</span><span class="gthumb-lbl">Sky recovery</span></span></button>
+        <button class="gthumb" data-label="Living room - Hernando, FL" data-style="Tone correction" data-before="assets/photos/living-room-before.webp" data-after="assets/photos/living-room-after.webp"><img src="assets/photos/living-room-after-thumb.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">02</span><span class="gthumb-lbl">Tone correction</span></span></button>
+        <button class="gthumb" data-label="Kitchen - Hernando, FL" data-style="Bright kitchen" data-before="assets/photos/bright-kitchen-before.webp" data-after="assets/photos/bright-kitchen-after.webp"><img src="assets/photos/bright-kitchen-after-thumb.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">03</span><span class="gthumb-lbl">Bright kitchen</span></span></button>
+        <button class="gthumb" data-label="Bathroom - Hernando, FL" data-style="Clean neutral" data-before="assets/photos/bathroom-suite-before.webp" data-after="assets/photos/bathroom-suite-after.webp"><img src="assets/photos/bathroom-suite-after-thumb.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">04</span><span class="gthumb-lbl">Clean neutral</span></span></button>
+        <button class="gthumb" data-label="Laundry room - Hernando, FL" data-style="Room cleanup" data-before="assets/photos/laundry-room-before.webp" data-after="assets/photos/laundry-room-after.webp"><img src="assets/photos/laundry-room-after-thumb.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">05</span><span class="gthumb-lbl">Room cleanup</span></span></button>
+        <button class="gthumb" data-label="Bedroom - Hernando, FL" data-style="Natural finish" data-before="assets/photos/bedroom-primary-before.webp" data-after="assets/photos/bedroom-primary-after.webp"><img src="assets/photos/bedroom-primary-after-thumb.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">06</span><span class="gthumb-lbl">Natural finish</span></span></button>
+        <button class="gthumb" data-label="Exterior - Hernando, FL" data-style="Curb appeal" data-before="assets/photos/exterior-drive-before.webp" data-after="assets/photos/exterior-drive-after.webp"><img src="assets/photos/exterior-drive-after-thumb.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">07</span><span class="gthumb-lbl">Curb appeal</span></span></button>
+        <button class="gthumb" data-label="Closet detail - Hernando, FL" data-style="Detail cleanup" data-before="assets/photos/closet-detail-before.webp" data-after="assets/photos/closet-detail-after.webp"><img src="assets/photos/closet-detail-after-thumb.webp" alt="" width="600" height="400" loading="lazy" decoding="async"><span class="gthumb-meta"><span class="gthumb-num">08</span><span class="gthumb-lbl">Detail cleanup</span></span></button>
       </div>
     </section>
 
@@ -131,18 +131,18 @@
         <h2 class="display-lg">Want in early?<br><em>Join the interest list.</em></h2>
         <p class="signup-sub">Drop your email and we will add you to the REAL PHOTO LAB mailing list for launch updates, early access, and the first $24.99 listing-pass rollout.</p>
         <div class="email-capture">
-          <script async src="https://eomail5.com/form/2e3f6636-5fcb-11f1-b462-bff99d8d0cbf.js" data-form="2e3f6636-5fcb-11f1-b462-bff99d8d0cbf"></script>
+          <button type="button" class="btn btn-primary btn-lg" data-email-capture-load>Join interest list</button>
         </div>
         <div class="signup-foot"><span>Real finished frames from sample listings. No spam, just launch updates.</span></div>
         <div class="proof-strip">
-          <img src="assets/photos/exterior-front-after.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
-          <img src="assets/photos/living-room-after.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
-          <img src="assets/photos/bright-kitchen-after.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
-          <img src="assets/photos/laundry-room-after.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
-          <img src="assets/photos/bedroom-primary-after.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
-          <img src="assets/photos/exterior-drive-after.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
-          <img src="assets/photos/kitchen-island-after.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
-          <img src="assets/photos/living-white-after.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
+          <img src="assets/photos/exterior-front-after-thumb.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
+          <img src="assets/photos/living-room-after-thumb.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
+          <img src="assets/photos/bright-kitchen-after-thumb.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
+          <img src="assets/photos/laundry-room-after-thumb.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
+          <img src="assets/photos/bedroom-primary-after-thumb.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
+          <img src="assets/photos/exterior-drive-after-thumb.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
+          <img src="assets/photos/kitchen-island-after-thumb.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
+          <img src="assets/photos/living-white-after-thumb.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
         </div>
       </div>
     </section>
@@ -202,6 +202,32 @@
       colorIndex = (colorIndex + 1) % colorSlides.length;
       colorSlides[colorIndex].classList.add("is-active");
     }, 2800);
+  }
+
+  const emailCapture = document.querySelector(".email-capture");
+  const loadEmailCapture = () => {
+    if (!emailCapture || emailCapture.dataset.loaded) return;
+    emailCapture.dataset.loaded = "true";
+    emailCapture.textContent = "";
+    const script = document.createElement("script");
+    script.async = true;
+    script.src = "https://eomail5.com/form/2e3f6636-5fcb-11f1-b462-bff99d8d0cbf.js";
+    script.dataset.form = "2e3f6636-5fcb-11f1-b462-bff99d8d0cbf";
+    emailCapture.append(script);
+  };
+  document.querySelectorAll('a[href="#signup"], [data-email-capture-load]').forEach((el) => {
+    el.addEventListener("click", loadEmailCapture, { passive: true });
+  });
+  if (location.hash === "#signup") {
+    loadEmailCapture();
+  } else if ("IntersectionObserver" in window && emailCapture) {
+    const observer = new IntersectionObserver((entries) => {
+      if (entries.some((entry) => entry.isIntersecting)) {
+        loadEmailCapture();
+        observer.disconnect();
+      }
+    }, { rootMargin: "700px 0px" });
+    observer.observe(emailCapture);
   }
 })();
 </script>
