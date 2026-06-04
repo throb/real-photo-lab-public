@@ -264,6 +264,14 @@ em { color: var(--accent); font-style: italic; }
   border-radius: 8px;
 }
 .step-thumb img, .feat-tile-img img, .feat-lead-img img, .proof-strip img { width: 100%; height: 100%; object-fit: cover; }
+.step-screen {
+  border: 1px solid var(--line);
+  background: #11100e;
+}
+.step-screen img {
+  object-fit: contain;
+  padding: 8px;
+}
 .step-thumb-tag {
   position: absolute;
   left: 12px;
