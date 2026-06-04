@@ -276,5 +276,16 @@
   });
 })();
 </script>
+<script>
+(() => {
+  const isLocal = /^(localhost|127\.0\.0\.1|0\.0\.0\.0)$/.test(location.hostname);
+  if (isLocal) return;
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  const script = document.createElement("script");
+  script.defer = true;
+  script.src = "/_vercel/insights/script.js";
+  document.head.append(script);
+})();
+</script>
 </body>
 </html>
