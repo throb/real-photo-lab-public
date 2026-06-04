@@ -55,9 +55,9 @@ em { color: var(--accent); font-style: italic; }
 .brand-mark img { width: 26px; height: 26px; object-fit: contain; }
 .brand-name {
   color: #f5f0e9;
-  font-size: 17px;
-  font-weight: 800;
-  letter-spacing: .08em;
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: .12em;
 }
 .nav-links { display: flex; gap: 32px; color: var(--muted); font-size: 14px; }
 .nav-links a:hover { color: var(--accent); }
