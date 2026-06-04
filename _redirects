@@ -1,0 +1,5 @@
+# Cloudflare Pages path redirects. Domain redirects belong in Cloudflare Bulk Redirects.
+/Realtor%20Photo%20Lab.html / 301
+/Realtor%20Photo%20Lab / 301
+/realtor-photo-lab.html / 301
+/privacy.html /#privacy 301

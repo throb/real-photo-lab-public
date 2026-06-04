@@ -13,10 +13,6 @@
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Geist:wght@400;500;600;700&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&amp;family=Geist:wght@400;500;600;700&amp;display=swap"></noscript>
 <link rel="stylesheet" href="styles.css?v=fast1">
-<script type="module">
-  import { inject } from 'https://cdn.jsdelivr.net/npm/@vercel/speed-insights@1/dist/index.mjs';
-  inject();
-</script>
 </head>
 <body>
 <div class="app">
@@ -172,7 +168,7 @@
       <h3>Email List</h3>
       <p>Signup forms are handled through EmailOctopus. If you join the list, your email address is processed by EmailOctopus so we can send updates and manage unsubscribe requests. You can unsubscribe using the link in any email we send.</p>
       <h3>Third-Party Services</h3>
-      <p>We use service providers to host the site, deliver the email signup form, and protect the form from spam. Current third-party policies include <a href="https://emailoctopus.com/legal/privacy">EmailOctopus Privacy Policy</a>, <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, and <a href="https://policies.google.com/terms">Google Terms of Service</a>.</p>
+      <p>We use service providers to host the site, understand basic site traffic and performance, deliver the email signup form, and protect the form from spam. Current third-party policies include <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare Privacy Policy</a>, <a href="https://emailoctopus.com/legal/privacy">EmailOctopus Privacy Policy</a>, <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, and <a href="https://policies.google.com/terms">Google Terms of Service</a>.</p>
       <h3>Cookies and Similar Technologies</h3>
       <p>The core marketing page does not require cookies from REAL PHOTO LAB. Third-party signup and anti-spam tools may use cookies or similar technologies when the signup form loads.</p>
       <h3>Sharing</h3>
@@ -278,17 +274,6 @@
   privacyDialog?.addEventListener("click", (event) => {
     if (event.target === privacyDialog) privacyDialog.close();
   });
-})();
-</script>
-<script>
-(() => {
-  const isLocal = /^(localhost|127\.0\.0\.1|0\.0\.0\.0)$/.test(location.hostname);
-  if (isLocal) return;
-  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-  const script = document.createElement("script");
-  script.defer = true;
-  script.src = "/_vercel/insights/script.js";
-  document.head.append(script);
 })();
 </script>
 </body>
