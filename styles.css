@@ -272,6 +272,34 @@ em { color: var(--accent); font-style: italic; }
   object-fit: contain;
   padding: 8px;
 }
+.step-wipe img { display: block; }
+.step-wipe-after {
+  position: absolute;
+  inset: 0;
+  clip-path: inset(0 0 0 48%);
+  animation: stepWipeClip 4.8s ease-in-out infinite;
+}
+.step-wipe-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 48%;
+  width: 2px;
+  background: rgba(255,255,255,.85);
+  box-shadow: 0 0 0 1px rgba(200,169,110,.45);
+  animation: stepWipeLine 4.8s ease-in-out infinite;
+}
+@keyframes stepWipeClip {
+  0%, 100% { clip-path: inset(0 0 0 72%); }
+  50% { clip-path: inset(0 0 0 24%); }
+}
+@keyframes stepWipeLine {
+  0%, 100% { left: 72%; }
+  50% { left: 24%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .step-wipe-after, .step-wipe-line { animation: none; }
+}
 .step-thumb-tag {
   position: absolute;
   left: 12px;
