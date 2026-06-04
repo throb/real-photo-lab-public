@@ -8,8 +8,9 @@ Current build: `marketing-v1-launch-pricing`
 - Limit: up to `30` images per listing
 - Allowance: `90` total generations per listing
 - Email capture: EmailOctopus embed
-- Analytics: Cloudflare Web Analytics, enabled from the Cloudflare dashboard
-- Cloudflare Pages support: `_headers` and `_redirects`
+- Hosting: Vercel
+- DNS and object storage: Cloudflare
+- Analytics: Vercel Web Analytics and Vercel Speed Insights
 
 Run locally with any static server, for example:
 
@@ -17,22 +18,24 @@ Run locally with any static server, for example:
 python -m http.server 4173
 ```
 
-## Cloudflare setup
+## Production setup
 
-Use this repo as a static Cloudflare Pages project:
+Use this repo as a static Vercel project:
 
 - Build command: leave blank
-- Build output directory: `/`
+- Output directory: `.`
 - Production branch: `main`
 - Custom domain: `realphotolab.com`
 
-Enable Web Analytics in Cloudflare instead of adding analytics scripts to the HTML:
+Cloudflare remains the DNS provider:
 
-1. Cloudflare dashboard > Workers & Pages > REAL PHOTO LAB project.
-2. Metrics > Web Analytics > Enable.
-3. Redeploy the Pages project so Cloudflare injects the beacon.
+- Apex/root record: use the record Vercel recommends for the project, commonly `A` -> `76.76.21.21`.
+- `www`: use the CNAME Vercel recommends, commonly `cname.vercel-dns.com`.
+- Keep records DNS-only unless there is a specific Cloudflare proxy/WAF requirement.
 
-Recommended domain redirects live in Cloudflare Bulk Redirects:
+Enable analytics in Vercel:
 
-- `www.realphotolab.com` -> `https://realphotolab.com` with `301`, preserve query string, subpath matching, and preserve path suffix.
-- `<project>.pages.dev` -> `https://realphotolab.com` with `301`, preserve query string, subpath matching, and preserve path suffix.
+- Project > Analytics > Enable Web Analytics.
+- Project > Speed Insights > Enable Speed Insights.
+
+The HTML loads Vercel analytics scripts only on non-local hosts. Cloudflare Web Analytics is not used by default; if we ever want it, add the manual Cloudflare snippet intentionally instead of switching the site to Cloudflare Pages.
