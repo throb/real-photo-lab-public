@@ -401,6 +401,11 @@ em { color: var(--accent); font-style: italic; }
   .color-cycle img { transition: none; }
 }
 .feat-lead-title { font-size: clamp(34px,4vw,58px); }
+.founder-heading span,
+.founder-heading em {
+  display: block;
+  white-space: nowrap;
+}
 .feat-lead-copy {
   max-width: 48ch;
   margin: 0;
@@ -556,6 +561,7 @@ em { color: var(--accent); font-style: italic; }
 @media (max-width: 520px) {
   .display { font-size: clamp(42px,12vw,58px); }
   .display-md, .display-lg { font-size: clamp(38px,12vw,56px); }
+  .founder-heading { font-size: clamp(22px,6.6vw,34px); line-height: 1.24; }
   .hero-slider-overlay { padding: 24px; }
   .gallery-thumbs { grid-template-columns: repeat(2,1fr); }
   .feat-grid { grid-template-columns: 1fr; }
