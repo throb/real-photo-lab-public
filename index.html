@@ -277,6 +277,10 @@
 })();
 </script>
 <script>
+  // Initialize Vercel Web Analytics
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+</script>
+<script>
 (() => {
   const isLocal = /^(localhost|127\.0\.0\.1|0\.0\.0\.0)$/.test(location.hostname);
   if (isLocal) return;
