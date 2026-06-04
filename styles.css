@@ -294,6 +294,15 @@ em { color: var(--accent); font-style: italic; }
   align-items: center;
 }
 .feat-lead-img { aspect-ratio: 4/5; overflow: hidden; background: var(--bg-2); border-radius: 8px; }
+.feat-lead-img.feat-screen { aspect-ratio: 16/11; }
+.feat-screen {
+  border: 1px solid var(--line);
+  background: #11100e;
+}
+.feat-screen img {
+  object-fit: contain;
+  padding: clamp(10px,1.5vw,18px);
+}
 .feat-lead-title { font-size: clamp(34px,4vw,58px); }
 .feat-lead-copy {
   max-width: 48ch;
@@ -303,6 +312,7 @@ em { color: var(--accent); font-style: italic; }
 }
 .feat-grid { grid-template-columns: repeat(2,1fr); }
 .feat-tile-img { aspect-ratio: 16/10; }
+.feat-tile-img.feat-screen { aspect-ratio: 4/3; }
 .feat-tile-title { min-height: 2.2em; font-size: clamp(22px,2vw,27px); }
 
 .pricing-grid { grid-template-columns: repeat(3,1fr); gap: 16px; }
