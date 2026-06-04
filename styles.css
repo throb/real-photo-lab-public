@@ -480,6 +480,16 @@ em { color: var(--accent); font-style: italic; }
   font: italic clamp(18px,1.8vw,22px)/1.5 var(--serif);
 }
 .signup-foot { margin: 48px 0 20px; color: var(--muted); font-size: 12px; }
+.recaptcha-note {
+  display: block;
+  max-width: 58ch;
+  margin: 10px auto 0;
+  color: rgba(185,175,160,.78);
+  font-size: 11px;
+  line-height: 1.45;
+}
+.recaptcha-note a { color: var(--accent); }
+.grecaptcha-badge { visibility: hidden; }
 .email-capture {
   max-width: 560px;
   margin: 0 auto 24px;

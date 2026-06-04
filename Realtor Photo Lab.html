@@ -131,7 +131,7 @@
         <div class="email-capture">
           <button type="button" class="btn btn-primary btn-lg" data-email-capture-load>Join interest list</button>
         </div>
-        <div class="signup-foot"><span>Real finished frames from sample listings. No spam, just launch updates.</span></div>
+        <div class="signup-foot"><span>Real finished frames from sample listings. No spam, just launch updates.</span><small class="recaptcha-note">This signup is protected by reCAPTCHA and the Google <a href="https://policies.google.com/privacy">Privacy Policy</a> and <a href="https://policies.google.com/terms">Terms of Service</a> apply.</small></div>
         <div class="proof-strip">
           <img src="assets/photos/exterior-front-after-thumb.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
           <img src="assets/photos/living-room-after-thumb.webp" alt="" width="400" height="300" loading="lazy" decoding="async">
@@ -168,7 +168,7 @@
       <h3>Email List</h3>
       <p>Signup forms are handled through EmailOctopus. If you join the list, your email address is processed by EmailOctopus so we can send updates and manage unsubscribe requests. You can unsubscribe using the link in any email we send.</p>
       <h3>Third-Party Services</h3>
-      <p>We use service providers to host the site, deliver the email signup form, and protect the form from spam. Current third-party policies include <a href="https://emailoctopus.com/legal/privacy">EmailOctopus Privacy Policy</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+      <p>We use service providers to host the site, deliver the email signup form, and protect the form from spam. Current third-party policies include <a href="https://emailoctopus.com/legal/privacy">EmailOctopus Privacy Policy</a>, <a href="https://policies.google.com/privacy">Google Privacy Policy</a>, and <a href="https://policies.google.com/terms">Google Terms of Service</a>.</p>
       <h3>Cookies and Similar Technologies</h3>
       <p>The core marketing page does not require cookies from REAL PHOTO LAB. Third-party signup and anti-spam tools may use cookies or similar technologies when the signup form loads.</p>
       <h3>Sharing</h3>
@@ -213,6 +213,10 @@
     const btn = event.target.closest(".gthumb");
     if (!btn) return;
     document.querySelectorAll(".gthumb").forEach((el) => el.classList.toggle("gthumb-active", el === btn));
+    after.removeAttribute("srcset");
+    after.removeAttribute("sizes");
+    before.removeAttribute("srcset");
+    before.removeAttribute("sizes");
     after.src = btn.dataset.after;
     before.src = btn.dataset.before;
     document.getElementById("gallery-label").textContent = btn.dataset.label;
