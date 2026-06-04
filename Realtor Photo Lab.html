@@ -148,8 +148,37 @@
 
   <footer class="foot">
     <div><div class="foot-brand">REAL PHOTO LAB</div><div class="foot-tag">An imaging studio for real-estate professionals. Color-graded, lens-corrected, ready for the MLS.</div><div class="foot-meta">&copy; 2026 - Made in Florida</div></div>
-    <div class="foot-cols"><div><div class="foot-col-h">Studio</div><div class="foot-col"><a href="#gallery">Gallery</a><a href="#how">Process</a><a href="#features">Features</a><a href="#pricing">Pricing</a></div></div><div><div class="foot-col-h">For pros</div><div class="foot-col"><a href="#signup">Brokerages</a><a href="#signup">Photographers</a><a href="#signup">API access</a></div></div><div><div class="foot-col-h">Company</div><div class="foot-col"><a href="#signup">Contact</a><a href="#signup">Privacy</a></div></div></div>
+    <div class="foot-cols"><div><div class="foot-col-h">Studio</div><div class="foot-col"><a href="#gallery">Gallery</a><a href="#how">Process</a><a href="#features">Features</a><a href="#pricing">Pricing</a></div></div><div><div class="foot-col-h">For pros</div><div class="foot-col"><a href="#signup">Brokerages</a><a href="#signup">Photographers</a></div></div><div><div class="foot-col-h">Company</div><div class="foot-col"><a href="#privacy" data-privacy-open>Privacy</a></div></div></div>
   </footer>
+
+  <dialog class="privacy-dialog" id="privacy-policy" aria-labelledby="privacy-title">
+    <div class="privacy-panel">
+      <button type="button" class="privacy-close" data-privacy-close>Close</button>
+      <h2 id="privacy-title">Privacy Policy</h2>
+      <p class="privacy-updated">Last updated: June 4, 2026</p>
+      <p>REAL PHOTO LAB respects your privacy. This policy explains what information we collect on this public marketing site, how we use it, and the choices you have.</p>
+      <h3>Information We Collect</h3>
+      <ul>
+        <li>Email address and any form information you choose to submit.</li>
+        <li>Basic technical information such as browser type, device type, pages visited, referring page, and approximate time of visit.</li>
+        <li>Security and anti-spam signals collected by services used to protect the signup form.</li>
+      </ul>
+      <h3>How We Use Information</h3>
+      <p>We use information to send launch updates, manage the interest list, understand site performance, prevent spam or abuse, and improve REAL PHOTO LAB.</p>
+      <h3>Email List</h3>
+      <p>Signup forms are handled through EmailOctopus. If you join the list, your email address is processed by EmailOctopus so we can send updates and manage unsubscribe requests. You can unsubscribe using the link in any email we send.</p>
+      <h3>Third-Party Services</h3>
+      <p>We use service providers to host the site, deliver the email signup form, and protect the form from spam. Current third-party policies include <a href="https://emailoctopus.com/legal/privacy">EmailOctopus Privacy Policy</a> and <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</p>
+      <h3>Cookies and Similar Technologies</h3>
+      <p>The core marketing page does not require cookies from REAL PHOTO LAB. Third-party signup and anti-spam tools may use cookies or similar technologies when the signup form loads.</p>
+      <h3>Sharing</h3>
+      <p>We do not sell personal information. We share information only with service providers that help us operate the site, manage the interest list, secure the form, comply with law, or protect our rights.</p>
+      <h3>Retention and Choices</h3>
+      <p>We keep interest-list information until you unsubscribe or ask us to remove it, unless we need to keep limited information for legal, security, or operational reasons. You may ask to access, correct, or delete personal information associated with your email address by replying to a REAL PHOTO LAB email.</p>
+      <h3>Future Product Use</h3>
+      <p>If REAL PHOTO LAB later supports account creation, listing uploads, payments, or production editing workflows, we will update this policy to describe those practices.</p>
+    </div>
+  </dialog>
 </div>
 
 <script>
@@ -227,6 +256,20 @@
     }, { rootMargin: "700px 0px" });
     observer.observe(emailCapture);
   }
+
+  const privacyDialog = document.getElementById("privacy-policy");
+  const openPrivacy = (event) => {
+    event.preventDefault();
+    if (privacyDialog?.showModal) {
+      privacyDialog.showModal();
+      privacyDialog.querySelector("[data-privacy-close]")?.focus();
+    }
+  };
+  document.querySelectorAll("[data-privacy-open]").forEach((el) => el.addEventListener("click", openPrivacy));
+  document.querySelectorAll("[data-privacy-close]").forEach((el) => el.addEventListener("click", () => privacyDialog?.close()));
+  privacyDialog?.addEventListener("click", (event) => {
+    if (event.target === privacyDialog) privacyDialog.close();
+  });
 })();
 </script>
 </body>

@@ -547,6 +547,46 @@ em { color: var(--accent); font-style: italic; }
 .foot-cols { display: grid; grid-template-columns: repeat(3,minmax(110px,auto)); gap: 16px 48px; }
 .foot-col a { display: block; padding: 4px 0; }
 
+.privacy-dialog {
+  width: min(820px, calc(100vw - 32px));
+  max-height: min(760px, calc(100vh - 32px));
+  padding: 0;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: var(--bg);
+  color: #f5f0e9;
+}
+.privacy-dialog::backdrop { background: rgba(0,0,0,.72); }
+.privacy-panel {
+  position: relative;
+  max-height: inherit;
+  overflow: auto;
+  padding: clamp(24px,4vw,44px);
+}
+.privacy-close {
+  float: right;
+  min-height: 34px;
+  padding: 0 12px;
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  background: transparent;
+  color: #f5f0e9;
+  cursor: pointer;
+}
+.privacy-panel h2 {
+  margin: 0 0 10px;
+  font: 300 clamp(38px,6vw,64px)/.95 var(--serif);
+}
+.privacy-panel h3 {
+  margin: 30px 0 8px;
+  font: 400 24px/1.1 var(--serif);
+}
+.privacy-panel p,
+.privacy-panel li { color: var(--muted); }
+.privacy-panel a { color: var(--accent); }
+.privacy-updated { margin: 0 0 28px; color: var(--accent); font-size: 13px; }
+.privacy-panel ul { padding-left: 20px; }
+
 @media (max-width: 960px) {
   .steps, .pricing-grid, .feat-lead-v2 { grid-template-columns: 1fr; }
   .tier-featured { transform: none; }
