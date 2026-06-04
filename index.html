@@ -94,7 +94,12 @@
         <p class="sect-sub">Start with a fast finished look, then keep full control with layers, masks, color tools, crop, object removal, and editable local fixes.</p>
       </div>
       <div class="feat-lead-v2">
-        <div class="feat-lead-img feat-screen"><img src="assets/screenshots/color-workspace.webp" alt="REAL PHOTO LAB color workspace with image preview, presets, color wheels, and tone controls" width="1200" height="819" loading="lazy" decoding="async"></div>
+        <div class="feat-lead-img feat-screen color-cycle" aria-label="REAL PHOTO LAB color tools preview">
+          <img class="is-active" src="assets/screenshots/color-workspace.webp" alt="REAL PHOTO LAB color workspace with image preview, presets, color wheels, and tone controls" width="1200" height="819" loading="lazy" decoding="async">
+          <img src="assets/screenshots/color-curves.webp" alt="Curves color correction panel" width="720" height="490" loading="lazy" decoding="async">
+          <img src="assets/screenshots/color-basic.webp" alt="Basic color correction sliders" width="720" height="944" loading="lazy" decoding="async">
+          <img src="assets/screenshots/color-presets.webp" alt="Color presets panel with auto color and sky pop options" width="720" height="452" loading="lazy" decoding="async">
+        </div>
         <div class="feat-lead-text"><h3 class="feat-lead-title">One-click when it works. <em>Tools when it matters.</em></h3><p class="feat-lead-copy">Apply a fast look, then tune color wheels, curves, presets, masks, layers, and final polish in one focused workspace.</p></div>
       </div>
       <div class="feat-grid">
@@ -182,6 +187,17 @@
     document.getElementById("gallery-style").textContent = btn.dataset.style;
     setPos(galleryFrame, galleryFrame.getBoundingClientRect().left + galleryFrame.offsetWidth / 2);
   });
+
+  const colorSlides = [...document.querySelectorAll(".color-cycle img")];
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  if (colorSlides.length > 1 && !reduceMotion) {
+    let colorIndex = 0;
+    setInterval(() => {
+      colorSlides[colorIndex].classList.remove("is-active");
+      colorIndex = (colorIndex + 1) % colorSlides.length;
+      colorSlides[colorIndex].classList.add("is-active");
+    }, 2800);
+  }
 })();
 </script>
 </body>

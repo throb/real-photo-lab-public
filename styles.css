@@ -303,6 +303,17 @@ em { color: var(--accent); font-style: italic; }
   object-fit: contain;
   padding: clamp(10px,1.5vw,18px);
 }
+.color-cycle { position: relative; }
+.color-cycle img {
+  position: absolute;
+  inset: 0;
+  opacity: 0;
+  transition: opacity 700ms ease;
+}
+.color-cycle img.is-active { opacity: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .color-cycle img { transition: none; }
+}
 .feat-lead-title { font-size: clamp(34px,4vw,58px); }
 .feat-lead-copy {
   max-width: 48ch;
