@@ -292,11 +292,13 @@ em { color: var(--accent); font-style: italic; }
 }
 @keyframes stepWipeClip {
   0%, 12% { clip-path: inset(0 100% 0 0); }
-  76%, 100% { clip-path: inset(0 0 0 0); }
+  46%, 54% { clip-path: inset(0 0 0 0); }
+  88%, 100% { clip-path: inset(0 100% 0 0); }
 }
 @keyframes stepWipeLine {
   0%, 12% { left: 0; }
-  76%, 100% { left: 100%; }
+  46%, 54% { left: 100%; }
+  88%, 100% { left: 0; }
 }
 @media (prefers-reduced-motion: reduce) {
   .step-wipe-after, .step-wipe-line { animation: none; }
